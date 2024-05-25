@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    border-bottom: 1px solid #dadada;
+}
+
+nav {
+    height: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6vw;
+    border-bottom: 1px solid #dadada;
+}
+
+nav img {
+    height: 4vw;
+}
+
+#nav-right {
+    display: flex;
+    align-items: center;
+    gap: 3.2vw;
+}
+
+#nav-right h4 {
+    font-weight: 400;
+    font-size: 1.4vw;
+    cursor: pointer;
+}
+
+#nav-right h4:hover {
+    color: rgba(0, 0, 0, 0.623);
+}
+
+#nav-right button {
+    padding: 1vw 2vw;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.4vw;
+    background-color: #5ec576;
+    cursor: pointer;
+}
+
+#nav-right i {
+    display: none;
+}
+
+#nav-right button:hover {
+    background-color: #62cd7b;
+}
+
+#hero {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 4vw;
+}
+
+#hero-left h1 {
+    font-size: 4.5vw;
+    font-weight: 600;
+    color: #444444;
+    line-height: 6vw;
+}
+
+#hero-left span {
+    position: relative;
+    font-size: 4.5vw;
+    color: #444444;
+    padding: 10px 20px;
+    overflow: hidden;
+}
+
+#hero-left span::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #7ecf91;
+    transform: skew(-20deg);
+    transform-origin: top bottom;
+    z-index: -1;
+}
+
+#hero-left p {
+    margin-top: 4vw;
+    font-size: 1.8vw;
+    color: #444444;
+}
+
+#hero-left h4 {
+    display: inline-block;
+    margin-top: 4vw;
+    padding-bottom: 0.2vw;
+    color: #5ec576;
+    font-weight: 500;
+    border-bottom: 1px solid #5ec576;
+}
+
+#hero-right img {
+    height: 30vw;
+}
+
+#page2 {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 2vw 14vw;
+    border-bottom: 1px solid #dadada;
+    padding-bottom: 5vw;
+}
+
+#page2-top {
+    margin-top: 6vw;
+    padding: 0 6vw;
+}
+
+#page2-top h4 {
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: #5ec576;
+}
+
+#page2-top p {
+    margin-top: 1vw;
+    font-size: 3vw;
+    font-weight: 500;
+    color: #5c5b5b;
+}
+
+#page2-hero {
+    margin-top: 7vw;
+}
+
+.hero-sections {
+    display: flex;  
+    margin-bottom: 4vw;
+    gap: 8vw;
+}
+
+.hero-sections img {
+    height: 20vw;
+    width: 35vw;
+}
+
+.section-right {
+    padding-top: 1vw;
+    width: 50%;
+}
+
+.section-right h4 {
+    color: #444444;
+    font-weight: 600;
+    font-size: 1.5vw;
+}
+
+.section-right p {
+    padding-top: 2vw;
+    font-weight: 300;
+    color: #666666;
+    line-height: 2.3vw;
+}
+
+#page3 {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 10vw 14vw;
+    border-bottom: 1px solid #dadada;
+}
+
+#page3-top {
+    padding: 0 6vw;
+}
+
+#page3-top h4{
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: #5ec576;
+}
+
+#page3-top p {
+    margin-top: 1vw;
+    font-size: 3vw;
+    font-weight: 500;
+    color: #5c5b5b;
+}
+
+.page3-elem {
+    display: flex;
+    gap: 1.7vw;
+    margin-top: 6vw;
+    padding: 0 3vw;
+}
+
+.page3-elem h5 {
+    padding: 1vw 2vw;
+    border-radius: 50px;
+    font-size: 1.3vw;
+    font-weight: 500;
+    z-index: 5;
+}
+
+.page3-elem h5:nth-child(1) {
+    background-color: #ffcb03;
+}
+
+.page3-elem h5:nth-child(2) {
+    background-color: #5ec576;
+}
+
+.page3-elem h5:nth-child(3) {
+    background-color: #ff585f;
+}
+
+#page3-last {
+    background-color: rgb(247, 245, 245);
+    padding: 7vw 10vw;
+    margin-top: -1.5vw;
+}
+
+#page3-last h3 {
+    font-weight: 500;
+    font-size: 1.4vw;
+}
+
+#page3-last p {
+    margin-top: 2vw;
+    font-size: 1.2vw;
+    font-weight: 400;
+    color: #666666;
+}
+
+#page4 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 10vw 14vw;
+}
+
+#page4-top {
+    padding: 0 2vw;
+}
+
+#page4-top h4{
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: #5ec576;
+}
+
+#page4-top p {
+    margin-top: 1vw;
+    font-size: 2.9vw;
+    font-weight: 500;
+    color: #5c5b5b;
+}
+
+.open-accounts {
+    display: flex;
+    margin-top: 5vw;
+    align-items: center;
+    gap: 2vw;
+  }
+  
+  .open-imgs {
+    display: flex;
+  }
+  .open-imgs img {
+    height: 7vw;
+    width: 7vw;
+    border-radius: 50%;
+    margin-right: -1.7vw;
+    border: 3px solid #fdf2e9;
+  }
+  .open-imgs img:last-child {
+    margin-right: 0;
+  }
+  .open-text {
+    font-size: 2.4vw;
+    font-weight: 400;
+  }
+  
+  .open-text span {
+    color: #5ec576;
+    font-weight: 700;
+  }
+
+  #page5 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #37383d;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #page5-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    border-bottom: 1px solid #444444;
+    height: 34vw;
+    width: 100%;
+  }
+
+  #page5 h1 {
+    color: white;
+    font-weight: 500;
+    font-size: 3vw;
+  }
+
+  #page5 button {
+    margin-top: 4vw;
+    border: none;
+    padding: 1.5vw 4vw;
+    border-radius: 50px;
+    font-size: 1.5vw;
+    font-weight: 500;
+    background-color: #5ec576;
+  }
+
+  #page5 h1:nth-child(1) {
+    margin-top: 8vw;
+  }
+
+  #page5-last {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10vw;
+  }
+
+  .page5-container {
+    display: flex;
+    gap: 3vw;
+    margin-top: 7vw;
+  }
+
+  .page5-container h4 {
+    color: white;
+    font-weight: 400;
+    font-size: 1.2vw;
+  }
+
+  #page5-last img {
+    height: 4vw;
+    margin-top: 4vw;
+  }
+
+  #page5-last p span {
+    color: white;
+  }
+
+  #page5-last p {
+    margin-top: 4vw;
+    color: #b5b3b0;
+    font-weight: 400;
+    font-size: 1.1vw;
+  }
